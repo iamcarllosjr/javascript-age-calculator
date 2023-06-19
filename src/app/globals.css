@@ -2,26 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+.input-dia {
+  @apply w-[60px] mr-[20px] px-[5px] py-[20px] border-0 outline-none text-[18px] rounded-[5px] text-black text-center
+}
+.input-mes {
+  @apply w-[95px] mr-[20px] px-[14px] py-[20px] border-0 outline-none text-[18px] rounded-[5px] text-black text-center
+}
+.input-ano {
+  @apply w-[100px] mr-[20px] px-[14px] py-[20px] border-0 outline-none text-[18px] rounded-[5px] text-black text-center
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btn-calcular {
+@apply border-0 bg-[#ffff76] outline-none py-[15px] px-[30px] rounded-[5px] text-[#333] cursor-pointer font-semibold
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
